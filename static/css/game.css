@@ -1,0 +1,62 @@
+/* game card */
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1vw;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--color-skyblue-light-transparent-04);
+}
+
+#list-container .game-card {
+  flex: 0 15vw;
+}
+
+#catalog-container .game-card {
+  flex: 0 1 17%;
+}
+
+#game-card-icon {
+  height: 15vw;
+}
+
+.game-card #game-card-icon img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 15vw;
+  height: 15vw;
+  filter: grayscale(80%);
+}
+
+#game-card-details {
+  font-size: 0.8rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.game-card a:hover {
+  background-color: var(--color-skyblue-transparent-04);
+}
+
+.game-card a:hover>#game-card-icon>img {
+  filter: none;
+}
+
+.game-card a:hover>#game-card-details>.rating>i {
+  color: var(--color-orange-star);
+}
+
+#game-card-details h2,
+#game-card-details p {
+  margin: 0;
+}
+
+#game-card-details h2 {
+  padding-top: 0.6rem;
+}
+
+.rating {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,30 @@
+    @media screen and (max-width: 1600px) {
+
+        body header,
+        body main {
+            margin: 0 5vw;
+        }
+    }
+
+    @media screen and (max-width: 940px) {
+
+        body header,
+        body main {
+            margin: 0 3vw;
+        }
+
+        body main #register-form .container {
+            height: 400px;
+        }
+
+        body main #register-form .optional-fields .param {
+            flex-direction: column;
+            margin-bottom: 0;
+            align-items: flex-start;
+        }
+
+        body main #register-form .optional-fields .param select,
+        body main #register-form .optional-fields .param input {
+            width: calc(100% - 1rem);
+        }
+    }

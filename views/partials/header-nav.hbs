@@ -1,0 +1,36 @@
+<header>
+  <nav>
+    <a class="logo" href="/">
+      <i class="fa-solid fa-dice"></i>
+      <span>Play A Game Online</span>
+    </a>
+
+    {{#if user}}
+      <a class="username" href="/user/profile">
+        <i class="fa-regular fa-user"></i>
+        <span text="{{user.username}}"></span>
+      </a>
+    {{/if}}
+
+    <ul id="nav-bar">
+
+      <li><a href="/catalog">Catalog</a></li>
+
+      {{#if user}}
+
+        {{#if user.hasAdminRights}}
+          <li><a href="/admin-panel">Admin Panel</a></li>
+        {{/if}}
+
+        <li>
+          <form method="post" action="/auth/logout">
+            <button id="logout" type="submit">Logout</button>
+          </form>
+        </li>
+
+      {{else}}
+        <li><a href="/auth/login">Login</a></li>
+      {{/if}}
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,99 @@
+#game-container .action-console .action-window#Snaking {
+    width: 30vw;
+    height: 30vw;
+    background-color: white;
+    align-self: center;
+    /* Center the wireframe in the window horisontally
+       (action-console - action-control - action-window) / 2 
+    */
+    margin-left: calc((50vw - 5vw - 30vw) / 2);
+}
+
+.snake-head,
+.snake-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: calc(30vw / 20);
+    height: calc(30vw / 20);
+    border-radius: 0.4vw;
+    background-color: green;
+    border: 0.2vw solid rgb(0, 109, 0);
+}
+
+.snake-head .eye::before{
+    display: flex;
+    font-size: 0.6vw;
+    color: white;
+}
+
+.snake-head.up {
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.snake-head.up.eat {
+    clip-path: polygon(50% 0, 50% 50%, 100% 0, 100% 100%, 0% 100%, 0% 0%);
+}
+
+.snake-head.right {
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.snake-head.right.eat {
+    clip-path: polygon(100% 0%, 100% 50%, 50% 50%, 100% 100%, 0% 100%, 0% 0%);
+}
+
+.snake-head.down {
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.snake-head.down.eat {
+    clip-path: polygon(100% 0, 100% 100%, 50% 100%, 50% 50%, 0% 100%, 0% 0%);
+}
+
+.snake-head.left {
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.snake-head.left.eat {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 50%, 50% 50%, 0% 0%);
+}
+
+.snake-body.up {
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.snake-body.right {
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.snake-body.down {
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.snake-body.left {
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.snake-body .stripe::before {
+    display: flex;
+    font-size: 1vw;
+    color: rgb(0, 109, 0);
+}
+
+.food {
+    position: absolute;
+    width: calc(30vw / 20);
+    height: calc(30vw / 20);
+    background-color: red;
+    border-radius: 1vw;
+}

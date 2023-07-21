@@ -1,0 +1,16 @@
+<main>
+  <h1 class="error">403 - Access denied</h1>
+  <div class="error">
+
+    <p>Sorry, but the access to this page is restricted.</p>
+
+    {{#if loggedUser}}
+      <p>If you're a really good friend to the site administrators, you may ask
+        them for additional rights by contacting them directly.</p>
+    {{else}}
+      <p>If you already have an account and access to this page, please
+        <a href="/auth/login">log in.</a></p>
+    {{/if}}
+
+  </div>
+</main>

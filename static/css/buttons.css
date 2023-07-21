@@ -1,0 +1,44 @@
+.register-btn,
+.login-btn {
+    background-color: var(--color-skyblue-light);
+    color: var(--color-gray-dark);
+    cursor: pointer;
+}
+
+.register-btn:hover,
+.login-btn:hover {
+    background-image: var(--gradient-blue);
+}
+
+.register-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-right-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    padding: 12px;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.login-btn {
+    border-radius: 0.2rem;
+    width: 100%;
+    padding: 0.11rem;
+}
+
+.action-control-button {
+    padding: 80% 0;
+}
+
+.action-control-button:hover {
+    background-color: var(--color-skyblue-light-transparent-04);
+}
+
+.action-control-button#play:hover {
+    border-top-right-radius: 0.6rem;
+}
+
+.action-control-button#restart:hover {
+    border-bottom-right-radius: 0.6rem;
+}

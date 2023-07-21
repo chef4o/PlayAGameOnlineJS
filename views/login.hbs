@@ -1,0 +1,38 @@
+<main>
+  <form
+    class="login-form"
+    enctype="multipart/form-data"
+    method="post"
+    action="/auth/login"
+  >
+    <h1>Access your gaming account</h1>
+
+    <div class="container">
+      <div class="element">
+        <label for="email"><b>Email</b></label>
+        <input
+          id="email"
+          type="text"
+          name="email"
+          required
+          value="{{body.email}}"
+        />
+      </div>
+
+      <div class="element">
+        <label for="pass"><b>Password</b></label>
+        <input id="pass" type="password" name="password" required />
+      </div>
+
+      <div class="element">
+        <button type="submit" class="login-btn">Login</button>
+      </div>
+    </div>
+
+    <div id="register-prompt">
+      <p>Don't have an account yet? Please
+        <a href="/auth/register">register.</a></p>
+    </div>
+  </form>
+
+</main>

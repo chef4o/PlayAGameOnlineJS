@@ -1,0 +1,8 @@
+.error p {
+    color: orangered;
+    text-align: center;
+}
+
+.error a {
+    color: var(--color-gray-dark);
+}

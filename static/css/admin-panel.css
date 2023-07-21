@@ -1,0 +1,109 @@
+.admin-panel-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.admin-panel-container * {
+    display: flex;
+}
+
+.admin-panel-users {
+    padding: 0.6rem;
+    background-color: var(--color-skyblue-light-transparent-04);
+}
+
+.admin-panel-users tbody {
+    width: 100%;
+}
+
+.admin-panel-users .fields {
+    text-align: left;
+    width: 80%;
+}
+
+.admin-panel-users .fill-space {
+    width: 20%;
+}
+
+.admin-panel-users .fields #header-username,
+.admin-panel-users .fields #header-email {
+    width: 35%;
+}
+
+.admin-panel-users .fields #header-role,
+.admin-panel-users .fields .change-roles {
+    width: 15%;
+}
+
+.update-form,
+.update-form input {
+    width: 100%;
+}
+
+.update-form,
+.update-form * {
+    flex-wrap: wrap;
+}
+
+.update-form {
+    background-color: var(--color-skyblue-light-transparent-01);
+}
+
+.update-form:hover {
+    background-color: var(--color-skyblue-light-transparent-02);
+}
+
+.update-form .param-group {
+    width: 80%;
+}
+
+.update-form .param {
+    padding-left: 0.6rem;
+    width: 35%;
+}
+
+.update-form .param-group .param-role,
+.update-form .param-group .change-roles {
+    width: 15%;
+}
+
+.update-form .btn-group {
+    width: 20%;
+}
+
+.update-form a {
+    width: 50%;
+    justify-content: center;
+    padding: 0.4rem;
+}
+
+.update-form a:hover {
+    background-color: var(--color-skyblue-light-transparent-04);
+}
+
+.update-form .admin-panel-users th {
+    text-align: left;
+    padding: 0.6rem;
+}
+
+.update-form input,
+.update-form input:focus {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.update-form .change-roles {
+    border: none;
+    background: none;
+}
+
+.update-form .change-roles option {
+    background-color: var(--color-skyblue-light);
+}
+
+.update-form .change-roles option:hover {
+    background-color: var(--color-skyblue);
+}

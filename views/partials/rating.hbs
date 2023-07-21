@@ -1,0 +1,50 @@
+{{! Star 1 }}
+{{#ifExt rating ">=" 1}}
+  <i class="fa-sharp fa-solid fa-star"></i>
+{{else}}
+  <i class="fa-sharp fa-regular fa-star"></i>
+{{/ifExt}}
+
+{{! Star 2 }}
+{{#ifExt rating ">=" 1.5}}
+  {{#ifExt rating "<" 2}}
+    <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+  {{else}}
+    <i class="fa-sharp fa-solid fa-star"></i>
+  {{/ifExt}}
+{{else}}
+  <i class="fa-sharp fa-regular fa-star"></i>
+{{/ifExt}}
+
+{{! Star 3 }}
+{{#ifExt rating ">=" 2.5}}
+  {{#ifExt rating "<" 3}}
+    <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+  {{else}}
+    <i class="fa-sharp fa-solid fa-star"></i>
+  {{/ifExt}}
+{{else}}
+  <i class="fa-sharp fa-regular fa-star"></i>
+{{/ifExt}}
+
+{{! Star 4 }}
+{{#ifExt rating ">=" 3.5}}
+  {{#ifExt rating "<" 4}}
+    <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+  {{else}}
+    <i class="fa-sharp fa-solid fa-star"></i>
+  {{/ifExt}}
+{{else}}
+  <i class="fa-sharp fa-regular fa-star"></i>
+{{/ifExt}}
+
+{{! Star 5 }}
+{{#ifExt rating ">=" 4.5}}
+  {{#ifExt rating "<" 5}}
+    <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+  {{else}}
+    <i class="fa-sharp fa-solid fa-star"></i>
+  {{/ifExt}}
+{{else}}
+  <i class="fa-sharp fa-regular fa-star"></i>
+{{/ifExt}}

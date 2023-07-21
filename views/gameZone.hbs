@@ -1,0 +1,105 @@
+<main>
+    {{#with game}}
+    <h1>{{name}}</h1>
+
+    <div id="game-container">
+        <div class="action-console">
+
+            <div class="action-window" id="{{name}}"></div>
+
+            <div class="action-control">
+                <button class="action-control-button" id="play"><i class="fa-solid fa-play"></i></button>
+                <button class="action-control-button" id="pause"><i class="fa-solid fa-pause"></i></button>
+                <button class="action-control-button" id="restart"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="my-scores">
+                <h2>My Top scores</h2>
+                <table class="table-headers">
+                    <tr>
+                        <th class="date">Date</th>
+                        <th class="score">Score</th>
+                        <th class="like"></th>
+                        <th class="comment"></th>
+                    </tr>
+                </table>
+                <table class="table-content">
+                    <tr>
+                        <td class="date">08/06/2023</td>
+                        <td class="score">6 000</td>
+                        <td class="like"><button><i class="fa-solid fa-thumbs-up"></i>23</button></td>
+                        <td class="comment"><button><i class="fa-solid fa-comment"></i>16</button></td>
+                    </tr>
+                    <tr>
+                        <td class="date">05/06/2023</td>
+                        <td class="score">2 543</td>
+                        <td class="like"><button><i class="fa-solid fa-thumbs-up"></i>4</button></td>
+                        <td class="comment"><button><i class="fa-solid fa-comment"></i>2</button></td>
+                    </tr>
+                    <tr>
+                        <td class="date">06/06/2023</td>
+                        <td class="score">2 113</td>
+                        <td class="like"><button><i class="fa-solid fa-thumbs-up"></i>1</button></td>
+                        <td class="comment"><button><i class="fa-solid fa-comment"></i>2</button></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="top-players">
+                <h2>Top players</h2>
+                <table class="table-headers">
+                    <tr>
+                        <th class="username">username</th>
+                        <th class="score">Score</th>
+                        <td class="like"></td>
+                        <td class="comment"></td>
+                    </tr>
+                </table>
+                <table class="table-content">
+                    <tr>
+                        <td class="username">User 1</td>
+                        <td class="score">120 000</td>
+                        <td class="like"><button><i class="fa-solid fa-thumbs-up"></i>223</button></td>
+                        <td class="comment"><button><i class="fa-solid fa-comment"></i>86</button></td>
+                    </tr>
+                    <tr>
+                        <td class="username">User 2342</td>
+                        <td class="score">98 000</td>
+                        <td class="like"><button><i class="fa-solid fa-thumbs-up"></i>112</button></td>
+                        <td class="comment"><button><i class="fa-solid fa-comment"></i>56</button></td>
+                    </tr>
+                    <tr>
+                        <td class="username">User 5424354245224542352</td>
+                        <td class="score">67 000</td>
+                        <td class="like"><button><i class="fa-solid fa-thumbs-up"></i>102</button></td>
+                        <td class="comment"><button><i class="fa-solid fa-comment"></i>23</button></td>
+                    </tr>
+                    <tr>
+                        <td class="username">User 443243213322</td>
+                        <td class="score">63 000</td>
+                        <td class="like"><button><i class="fa-solid fa-thumbs-up"></i>99</button></td>
+                        <td class="comment"><button><i class="fa-solid fa-comment"></i>20</button></td>
+                    </tr>
+                    <tr>
+                        <td class="username">User 542</td>
+                        <td class="score">42 000</td>
+                        <td class="like"><button><i class="fa-solid fa-thumbs-up"></i>63</button></td>
+                        <td class="comment"><button><i class="fa-solid fa-comment"></i>13</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    {{/with}}
+</main>
+{{!-- To truncate any Usernames that are too long to fit the table: --}}
+<script src="/static/htmlHelpers/textTrunc.js"></script>
+
+{{!-- To load the present game --}}
+{{#with game}}
+{{#ifExt name "==" "Snaking"}}
+<script src="/static/games/snake.js"></script>
+{{/ifExt}}
+{{/with}}

@@ -1,0 +1,68 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 0.6rem;
+}
+
+.login-form h1 {
+    margin-bottom: 1rem;
+}
+
+.login-form h1,
+.login-form .container {
+    background-color: var(--color-skyblue-light-transparent-04);
+}
+
+.login-form .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    border-radius: 0.6rem;
+}
+
+.login-form .element {
+    width: 45vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.login-form .element label {
+    padding-right: 0.8rem;
+}
+
+.login-form .element input {
+    padding: 0.4rem;
+    background: var(--color-skyblue-light);
+    border: none;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+}
+
+.login-form .element #email {
+    width: calc(100% - 5.2rem);
+}
+
+.login-form .element #pass {
+    width: calc(100% - 5.2rem);
+}
+
+.login-form .element input:focus {
+    background-color: var(--color-skyblue);
+    outline: none;
+    font-size: 0.8rem;
+}
+
+#register-prompt p {
+    text-align: center;
+}
+
+#register-prompt a {
+    color: white;
+}

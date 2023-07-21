@@ -1,0 +1,56 @@
+nav {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  display: flex;
+  gap: 0.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: var(--color-gray-dark);
+}
+
+#nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+#nav-bar a:hover,
+#nav-bar button:hover {
+  color: gray;
+}
+
+#nav-bar #logout {
+  padding: 0;
+}
+
+nav .username {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0 1rem;
+  border-radius: 0.6rem;
+  background: var(--color-skyblue-light-transparent-04);
+}
+
+nav .username:hover {
+  background: var(--color-skyblue-light);
+  border-radius: 0.6rem;
+}
+
+nav .username span {
+  font-size: 1.2rem;
+}
+
+nav .username i {
+  font-size: 1rem;
+}

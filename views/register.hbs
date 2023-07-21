@@ -1,0 +1,138 @@
+<main>
+  <form
+    class="register-form"
+    enctype="multipart/form-data"
+    method="post"
+    action="/auth/register"
+  >
+    <h1>Register your gaming account</h1>
+
+    <div class="container">
+      <div class="mandatory-fields">
+        <h2>Mandatory information</h2>
+
+        <div class="param-group">
+          <div class="param">
+            <label for="first-name">First name</label>
+            <input
+              id="first-name"
+              type="text"
+              name="firstName"
+              placeholder="e.g. 'James'"
+              size="15"
+              required
+            />
+            {{#if error}}
+            <p class="error">{{error}}</p>
+            {{/if}}
+          </div>
+
+          <div class="param">
+            <label for="last-name">Last name</label>
+            <input
+              id="last-name"
+              type="text"
+              name="lastName"
+              placeholder="e.g. 'Bond'"
+              size="15"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="param-group">
+          <div class="param">
+            <label for="username">Username</label>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              placeholder="must be unique"
+              size="15"
+              required
+            />
+          </div>
+
+          <div class="param">
+            <label for="email"><b>Email</b></label>
+            <input
+              id="email"
+              type="text"
+              placeholder="must be valid"
+              name="email"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="param-group">
+          <div class="param">
+            <label for="pass"><b>Password</b></label>
+            <input
+              id="pass"
+              type="password"
+              placeholder="minimum 8 characters"
+              name="password"
+              required
+            />
+          </div>
+
+          <div class="param">
+            <label for="re-pass"><b>Confirm</b></label>
+            <input
+              id="re-pass"
+              type="password"
+              placeholder="retype your password"
+              name="re-pass"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit" class="register-btn">Register</button>
+      </div>
+
+      <div class="optional-fields">
+        <h2>Optional details</h2>
+
+        <div class="param">
+          <label for="gender">Gender</label>
+
+          <select id="gender" name="gender">
+            {{#each genders}}
+              <option text="{{this}}" value="{{this}}"></option>
+            {{/each}}
+          </select>
+        </div>
+
+        <div class="param">
+          <label for="dob">Date of birth</label>
+          <input
+            type="date"
+            id="dob"
+            name="dateOfBirth"
+            min="1900-01-01"
+            value="1990-01-01"
+          />
+        </div>
+
+        <div class="param">
+          <label for="town">Town</label>
+          <input
+            id="town"
+            name="town"
+            type="text"
+            placeholder="where you reside"
+            size="15"
+          />
+        </div>
+
+        <div class="param">
+          <label for="avatar-path">Avatar</label>
+          <!--to change to File type-->
+          <!--<input id="avatar-path" name="avatar-path" th:field="${userRegister.avatarPath}" type="file">-->
+          <input id="avatar-path" name="avatar-path" type="text" />
+        </div>
+      </div>
+    </div>
+  </form>
+</main>

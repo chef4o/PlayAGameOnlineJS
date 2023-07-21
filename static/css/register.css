@@ -1,0 +1,184 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.register-form h1 {
+    margin-bottom: 1rem;
+}
+
+.register-form div {
+    padding: 10px 0;
+}
+
+.register-form .optional-fields div {
+    padding-bottom: 8px;
+}
+
+.register-form .container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 60vh;
+}
+
+.register-form .mandatory-fields *,
+.register-form .optional-fields * {
+    flex-wrap: wrap;
+}
+
+.register-form .mandatory-fields,
+.register-form .optional-fields {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 0.6rem;
+    text-align: center;
+    background-color: var(--color-skyblue-light-transparent-04);
+}
+
+.register-form .mandatory-fields {
+    width: 65%;
+}
+
+.register-form .optional-fields {
+    width: 35%;
+}
+
+.register-form .mandatory-fields h2,
+.register-form .optional-fields h2 {
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    padding: 0.6rem;
+    color: var(--color-gray-dark);
+    background-color: var(--color-skyblue-light-transparent-04);
+    margin-bottom: 0.6rem;
+}
+
+.register-form .optional-fields h2 {
+    margin-bottom: 1rem;
+}
+
+.register-form .param-group,
+.register-form .optional-fields .param {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    z-index: 1;
+}
+
+.register-form .param * {
+    margin: 0;
+}
+
+.register-form .param {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+.register-form label {
+    padding-right: 0.4rem;
+}
+
+.register-form input,
+.register-form select {
+    padding: 0.4rem;
+    background: var(--color-skyblue-light);
+    border: none;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+}
+
+.register-form input:focus {
+    background-color: var(--color-skyblue);
+    outline: none;
+    font-size: 0.8rem;
+}
+
+.register-form .mandatory-fields .param {
+    width: 48%;
+}
+
+.register-form .mandatory-fields label {
+    width: 5.2rem;
+}
+
+.register-form .optional-fields label {
+    width: 6.2rem;
+    text-align: left;
+}
+
+.register-form .mandatory-fields .param:nth-of-type(1) label {
+    text-align: left;
+}
+
+.register-form .mandatory-fields .param:nth-of-type(2) label {
+    text-align: right;
+}
+
+.register-form .mandatory-fields .param input {
+    width: calc(100% - 5.2rem);
+    min-width: 5.2rem;
+}
+
+.register-form .optional-fields .param input,
+.register-form .optional-fields .param select {
+    width: 18vw;
+}
+
+.register-form .optional-fields .param input[type=file] {
+    background: none;
+    color: var(--color-gray-dark);
+    margin-left: -0.4rem;
+}
+
+.register-form .optional-fields input[type=file]::file-selector-button {
+    border: none;
+    background: var(--color-skyblue-light);
+    padding: 0.3rem 0.6rem;
+    margin-right: 1rem;
+    border-radius: 0.2rem;
+    color: var(--color-gray-dark);
+    cursor: pointer;
+}
+
+.register-form .optional-fields input[type=file]::file-selector-button:hover {
+    background: var(--color-skyblue);
+}
+
+.register-form  .form-error * {
+    color: crimson;
+}
+
+.register-form .mandatory-fields .form-error,
+.register-form .optional-fields .form-error,
+.register-form .mandatory-fields .form-error,
+.register-form .optional-fields .form-error {
+    height: 1rem;
+}
+
+.register-form .mandatory-fields .form-error,
+.register-form .optional-fields .form-error {
+    text-align: left;
+}
+
+.register-form .mandatory-fields .form-error {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    margin-top: -2rem;
+}
+
+.register-form .mandatory-fields .form-error small {
+    width: 48%;
+    padding-left: 6.2rem;
+}
+
+.register-form .optional-fields .form-error {
+    width: 95%;
+}
+

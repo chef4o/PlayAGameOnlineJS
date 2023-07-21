@@ -1,0 +1,1689 @@
+[
+  {
+    "code": "ABW",
+    "name": "Aruba",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 103000
+  },  
+  {
+    "code": "AFG",
+    "name": "Afghanistan",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 22720000
+  },
+  {
+    "code": "AGO",
+    "name": "Angola",
+    "continent": "Africa",
+    "region": "Central Africa",
+    "population": 12878000
+  },
+  {
+    "code": "AIA",
+    "name": "Anguilla",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 8000
+  },
+  {
+    "code": "ALB",
+    "name": "Albania",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 3401200
+  },
+  {
+    "code": "AND",
+    "name": "Andorra",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 78000
+  },
+  {
+    "code": "ANT",
+    "name": "Netherlands Antilles",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 217000
+  },
+  {
+    "code": "ARE",
+    "name": "United Arab Emirates",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 2441000
+  },
+  {
+    "code": "ARG",
+    "name": "Argentina",
+    "continent": "South America",
+    "region": "South America",
+    "population": 37032000
+  },
+  {
+    "code": "ARM",
+    "name": "Armenia",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 3520000
+  },
+  {
+    "code": "ASM",
+    "name": "American Samoa",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "population": 68000
+  },
+  {
+    "code": "ATA",
+    "name": "Antarctica",
+    "continent": "Antarctica",
+    "region": "Antarctica",
+    "population": 0
+  },
+  {
+    "code": "ATF",
+    "name": "French Southern territories",
+    "continent": "Antarctica",
+    "region": "Antarctica",
+    "population": 0
+  },
+  {
+    "code": "ATG",
+    "name": "Antigua and Barbuda",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 68000
+  },
+  {
+    "code": "AUS",
+    "name": "Australia",
+    "continent": "Oceania",
+    "region": "Australia and New Zealand",
+    "population": 18886000
+  },
+  {
+    "code": "AUT",
+    "name": "Austria",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "population": 8091800
+  },
+  {
+    "code": "AZE",
+    "name": "Azerbaijan",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 7734000
+  },
+  {
+    "code": "BDI",
+    "name": "Burundi",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 6695000
+  },
+  {
+    "code": "BEL",
+    "name": "Belgium",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "population": 10239000
+  },
+  {
+    "code": "BEN",
+    "name": "Benin",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 6097000
+  },
+  {
+    "code": "BFA",
+    "name": "Burkina Faso",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 11937000
+  },
+  {
+    "code": "BGD",
+    "name": "Bangladesh",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 129155000
+  },
+  {
+    "code": "BGR",
+    "name": "Bulgaria",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "population": 8190900
+  },
+  {
+    "code": "BHR",
+    "name": "Bahrain",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 617000
+  },
+  {
+    "code": "BHS",
+    "name": "Bahamas",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 307000
+  },
+  {
+    "code": "BIH",
+    "name": "Bosnia and Herzegovina",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 3972000
+  },
+  {
+    "code": "BLR",
+    "name": "Belarus",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "population": 10236000
+  },
+  {
+    "code": "BLZ",
+    "name": "Belize",
+    "continent": "North America",
+    "region": "Central America",
+    "population": 241000
+  },
+  {
+    "code": "BMU",
+    "name": "Bermuda",
+    "continent": "North America",
+    "region": "North America",
+    "population": 65000
+  },
+  {
+    "code": "BOL",
+    "name": "Bolivia",
+    "continent": "South America",
+    "region": "South America",
+    "population": 8329000
+  },
+  {
+    "code": "BRA",
+    "name": "Brazil",
+    "continent": "South America",
+    "region": "South America",
+    "population": 170115000
+  },
+  {
+    "code": "BRB",
+    "name": "Barbados",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 270000
+  },
+  {
+    "code": "BRN",
+    "name": "Brunei",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "population": 328000
+  },
+  {
+    "code": "BTN",
+    "name": "Bhutan",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 2124000
+  },
+  {
+    "code": "BVT",
+    "name": "Bouvet Island",
+    "continent": "Antarctica",
+    "region": "Antarctica",
+    "population": 0
+  },
+  {
+    "code": "BWA",
+    "name": "Botswana",
+    "continent": "Africa",
+    "region": "Southern Africa",
+    "population": 1622000
+  },
+  {
+    "code": "CAF",
+    "name": "Central African Republic",
+    "continent": "Africa",
+    "region": "Central Africa",
+    "population": 3615000
+  },
+  {
+    "code": "CAN",
+    "name": "Canada",
+    "continent": "North America",
+    "region": "North America",
+    "population": 31147000
+  },
+  {
+    "code": "CCK",
+    "name": "Cocos (Keeling) Islands",
+    "continent": "Oceania",
+    "region": "Australia and New Zealand",
+    "population": 600
+  },
+  {
+    "code": "CHE",
+    "name": "Switzerland",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "population": 7160400
+  },
+  {
+    "code": "CHL",
+    "name": "Chile",
+    "continent": "South America",
+    "region": "South America",
+    "population": 15211000
+  },
+  {
+    "code": "CHN",
+    "name": "China",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "population": 1277558000
+  },
+  {
+    "code": "CIV",
+    "name": "Ivory Coast",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 14786000
+  },
+  {
+    "code": "CMR",
+    "name": "Cameroon",
+    "continent": "Africa",
+    "region": "Central Africa",
+    "population": 15085000
+  },
+  {
+    "code": "COD",
+    "name": "Congo, The Democratic Republic of",
+    "continent": "Africa",
+    "region": "Central Africa",
+    "population": 51654000
+  },
+  {
+    "code": "COG",
+    "name": "Congo",
+    "continent": "Africa",
+    "region": "Central Africa",
+    "population": 2943000
+  },
+  {
+    "code": "COK",
+    "name": "Cook Islands",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "population": 20000
+  },
+  {
+    "code": "COL",
+    "name": "Colombia",
+    "continent": "South America",
+    "region": "South America",
+    "population": 42321000
+  },
+  {
+    "code": "COM",
+    "name": "Comoros",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 578000
+  },
+  {
+    "code": "CPV",
+    "name": "Cabo Verde",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 428000
+  },
+  {
+    "code": "CRI",
+    "name": "Costa Rica",
+    "continent": "North America",
+    "region": "Central America",
+    "population": 4023000
+  },
+  {
+    "code": "CUB",
+    "name": "Cuba",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 11201000
+  },
+  {
+    "code": "CXR",
+    "name": "Christmas Island",
+    "continent": "Oceania",
+    "region": "Australia and New Zealand",
+    "population": 2500
+  },
+  {
+    "code": "CYM",
+    "name": "Cayman Islands",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 38000
+  },
+  {
+    "code": "CYP",
+    "name": "Cyprus",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 754700
+  },
+  {
+    "code": "CZE",
+    "name": "Czech Republic",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "population": 10278100
+  },
+  {
+    "code": "DEU",
+    "name": "Germany",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "population": 82164700
+  },
+  {
+    "code": "DJI",
+    "name": "Djibouti",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 638000
+  },
+  {
+    "code": "DMA",
+    "name": "Dominica",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 71000
+  },
+  {
+    "code": "DNK",
+    "name": "Denmark",
+    "continent": "Europe",
+    "region": "Nordic Countries",
+    "population": 5330000
+  },
+  {
+    "code": "DOM",
+    "name": "Dominican Republic",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 8495000
+  },
+  {
+    "code": "DZA",
+    "name": "Algeria",
+    "continent": "Africa",
+    "region": "Northern Africa",
+    "population": 31471000
+  },
+  {
+    "code": "ECU",
+    "name": "Ecuador",
+    "continent": "South America",
+    "region": "South America",
+    "population": 12646000
+  },
+  {
+    "code": "EGY",
+    "name": "Egypt",
+    "continent": "Africa",
+    "region": "Northern Africa",
+    "population": 68470000
+  },
+  {
+    "code": "ERI",
+    "name": "Eritrea",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 3850000
+  },
+  {
+    "code": "ESH",
+    "name": "Western Sahara",
+    "continent": "Africa",
+    "region": "Northern Africa",
+    "population": 293000
+  },
+  {
+    "code": "ESP",
+    "name": "Spain",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 39441700
+  },
+  {
+    "code": "EST",
+    "name": "Estonia",
+    "continent": "Europe",
+    "region": "Baltic Countries",
+    "population": 1439200
+  },
+  {
+    "code": "ETH",
+    "name": "Ethiopia",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 62565000
+  },
+  {
+    "code": "FIN",
+    "name": "Finland",
+    "continent": "Europe",
+    "region": "Nordic Countries",
+    "population": 5171300
+  },
+  {
+    "code": "FJI",
+    "name": "Fiji Islands",
+    "continent": "Oceania",
+    "region": "Melanesia",
+    "population": 817000
+  },
+  {
+    "code": "FLK",
+    "name": "Falkland Islands",
+    "continent": "South America",
+    "region": "South America",
+    "population": 2000
+  },
+  {
+    "code": "FRA",
+    "name": "France",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "population": 59225700
+  },
+  {
+    "code": "FRO",
+    "name": "Faroe Islands",
+    "continent": "Europe",
+    "region": "Nordic Countries",
+    "population": 43000
+  },
+  {
+    "code": "FSM",
+    "name": "Micronesia, Federated States of",
+    "continent": "Oceania",
+    "region": "Micronesia",
+    "population": 119000
+  },
+  {
+    "code": "GAB",
+    "name": "Gabon",
+    "continent": "Africa",
+    "region": "Central Africa",
+    "population": 1226000
+  },
+  {
+    "code": "GBR",
+    "name": "United Kingdom",
+    "continent": "Europe",
+    "region": "British Islands",
+    "population": 59623400
+  },
+  {
+    "code": "GEO",
+    "name": "Georgia",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 4968000
+  },
+  {
+    "code": "GHA",
+    "name": "Ghana",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 20212000
+  },
+  {
+    "code": "GIB",
+    "name": "Gibraltar",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 25000
+  },
+  {
+    "code": "GIN",
+    "name": "Guinea",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 7430000
+  },
+  {
+    "code": "GLP",
+    "name": "Guadeloupe",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 456000
+  },
+  {
+    "code": "GMB",
+    "name": "Gambia",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 1305000
+  },
+  {
+    "code": "GNB",
+    "name": "Guinea-Bissau",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 1213000
+  },
+  {
+    "code": "GNQ",
+    "name": "Equatorial Guinea",
+    "continent": "Africa",
+    "region": "Central Africa",
+    "population": 453000
+  },
+  {
+    "code": "GRC",
+    "name": "Greece",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 10545700
+  },
+  {
+    "code": "GRD",
+    "name": "Grenada",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 94000
+  },
+  {
+    "code": "GRL",
+    "name": "Greenland",
+    "continent": "North America",
+    "region": "North America",
+    "population": 56000
+  },
+  {
+    "code": "GTM",
+    "name": "Guatemala",
+    "continent": "North America",
+    "region": "Central America",
+    "population": 11385000
+  },
+  {
+    "code": "GUF",
+    "name": "French Guiana",
+    "continent": "South America",
+    "region": "South America",
+    "population": 181000
+  },
+  {
+    "code": "GUM",
+    "name": "Guam",
+    "continent": "Oceania",
+    "region": "Micronesia",
+    "population": 168000
+  },
+  {
+    "code": "GUY",
+    "name": "Guyana",
+    "continent": "South America",
+    "region": "South America",
+    "population": 861000
+  },
+  {
+    "code": "HKG",
+    "name": "Hong Kong",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "population": 6782000
+  },
+  {
+    "code": "HMD",
+    "name": "Heard Island and McDonald Islands",
+    "continent": "Antarctica",
+    "region": "Antarctica",
+    "population": 0
+  },
+  {
+    "code": "HND",
+    "name": "Honduras",
+    "continent": "North America",
+    "region": "Central America",
+    "population": 6485000
+  },
+  {
+    "code": "HRV",
+    "name": "Croatia",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 4473000
+  },
+  {
+    "code": "HTI",
+    "name": "Haiti",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 8222000
+  },
+  {
+    "code": "HUN",
+    "name": "Hungary",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "population": 10043200
+  },
+  {
+    "code": "IDN",
+    "name": "Indonesia",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "population": 212107000
+  },
+  {
+    "code": "IND",
+    "name": "India",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 1013662000
+  },
+  {
+    "code": "IOT",
+    "name": "British Indian Ocean Territory",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 0
+  },
+  {
+    "code": "IRL",
+    "name": "Ireland",
+    "continent": "Europe",
+    "region": "British Islands",
+    "population": 3775100
+  },
+  {
+    "code": "IRN",
+    "name": "Iran",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 67702000
+  },
+  {
+    "code": "IRQ",
+    "name": "Iraq",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 23115000
+  },
+  {
+    "code": "ISL",
+    "name": "Iceland",
+    "continent": "Europe",
+    "region": "Nordic Countries",
+    "population": 279000
+  },
+  {
+    "code": "ISR",
+    "name": "Israel",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 6217000
+  },
+  {
+    "code": "ITA",
+    "name": "Italy",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 57680000
+  },
+  {
+    "code": "JAM",
+    "name": "Jamaica",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 2583000
+  },
+  {
+    "code": "JOR",
+    "name": "Jordan",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 5083000
+  },
+  {
+    "code": "JPN",
+    "name": "Japan",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "population": 126714000
+  },
+  {
+    "code": "KAZ",
+    "name": "Kazakhstan",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 16223000
+  },
+  {
+    "code": "KEN",
+    "name": "Kenya",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 30080000
+  },
+  {
+    "code": "KGZ",
+    "name": "Kyrgyzstan",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 4699000
+  },
+  {
+    "code": "KHM",
+    "name": "Cambodia",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "population": 11168000
+  },
+  {
+    "code": "KIR",
+    "name": "Kiribati",
+    "continent": "Oceania",
+    "region": "Micronesia",
+    "population": 83000
+  },
+  {
+    "code": "KNA",
+    "name": "Saint Kitts and Nevis",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 38000
+  },
+  {
+    "code": "KOR",
+    "name": "South Korea",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "population": 46844000
+  },
+  {
+    "code": "KWT",
+    "name": "Kuwait",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 1972000
+  },
+  {
+    "code": "LAO",
+    "name": "Laos",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "population": 5433000
+  },
+  {
+    "code": "LBN",
+    "name": "Lebanon",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 3282000
+  },
+  {
+    "code": "LBR",
+    "name": "Liberia",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 3154000
+  },
+  {
+    "code": "LBY",
+    "name": "Libya",
+    "continent": "Africa",
+    "region": "Northern Africa",
+    "population": 5605000
+  },
+  {
+    "code": "LCA",
+    "name": "Saint Lucia",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 154000
+  },
+  {
+    "code": "LIE",
+    "name": "Liechtenstein",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "population": 32300
+  },
+  {
+    "code": "LKA",
+    "name": "Sri Lanka",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 18827000
+  },
+  {
+    "code": "LSO",
+    "name": "Lesotho",
+    "continent": "Africa",
+    "region": "Southern Africa",
+    "population": 2153000
+  },
+  {
+    "code": "LTU",
+    "name": "Lithuania",
+    "continent": "Europe",
+    "region": "Baltic Countries",
+    "population": 3698500
+  },
+  {
+    "code": "LUX",
+    "name": "Luxembourg",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "population": 435700
+  },
+  {
+    "code": "LVA",
+    "name": "Latvia",
+    "continent": "Europe",
+    "region": "Baltic Countries",
+    "population": 2424200
+  },
+  {
+    "code": "MAC",
+    "name": "Macao",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "population": 473000
+  },
+  {
+    "code": "MAR",
+    "name": "Morocco",
+    "continent": "Africa",
+    "region": "Northern Africa",
+    "population": 28351000
+  },
+  {
+    "code": "MCO",
+    "name": "Monaco",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "population": 34000
+  },
+  {
+    "code": "MDA",
+    "name": "Moldova",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "population": 4380000
+  },
+  {
+    "code": "MDG",
+    "name": "Madagascar",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 15942000
+  },
+  {
+    "code": "MDV",
+    "name": "Maldives",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 286000
+  },
+  {
+    "code": "MEX",
+    "name": "Mexico",
+    "continent": "North America",
+    "region": "Central America",
+    "population": 98881000
+  },
+  {
+    "code": "MHL",
+    "name": "Marshall Islands",
+    "continent": "Oceania",
+    "region": "Micronesia",
+    "population": 64000
+  },
+  {
+    "code": "MKD",
+    "name": "Macedonia",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 2024000
+  },
+  {
+    "code": "MLI",
+    "name": "Mali",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 11234000
+  },
+  {
+    "code": "MLT",
+    "name": "Malta",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 380200
+  },
+  {
+    "code": "MMR",
+    "name": "Myanmar",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "population": 45611000
+  },
+  {
+    "code": "MNG",
+    "name": "Mongolia",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "population": 2662000
+  },
+  {
+    "code": "MNP",
+    "name": "Northern Mariana Islands",
+    "continent": "Oceania",
+    "region": "Micronesia",
+    "population": 78000
+  },
+  {
+    "code": "MOZ",
+    "name": "Mozambique",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 19680000
+  },
+  {
+    "code": "MRT",
+    "name": "Mauritania",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 2670000
+  },
+  {
+    "code": "MSR",
+    "name": "Montserrat",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 11000
+  },
+  {
+    "code": "MTQ",
+    "name": "Martinique",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 395000
+  },
+  {
+    "code": "MUS",
+    "name": "Mauritius",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 1158000
+  },
+  {
+    "code": "MWI",
+    "name": "Malawi",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 10925000
+  },
+  {
+    "code": "MYS",
+    "name": "Malaysia",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "population": 22244000
+  },
+  {
+    "code": "MYT",
+    "name": "Mayotte",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 149000
+  },
+  {
+    "code": "NAM",
+    "name": "Namibia",
+    "continent": "Africa",
+    "region": "Southern Africa",
+    "population": 1726000
+  },
+  {
+    "code": "NCL",
+    "name": "New Caledonia",
+    "continent": "Oceania",
+    "region": "Melanesia",
+    "population": 214000
+  },
+  {
+    "code": "NER",
+    "name": "Niger",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 10730000
+  },
+  {
+    "code": "NFK",
+    "name": "Norfolk Island",
+    "continent": "Oceania",
+    "region": "Australia and New Zealand",
+    "population": 2000
+  },
+  {
+    "code": "NGA",
+    "name": "Nigeria",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 111506000
+  },
+  {
+    "code": "NIC",
+    "name": "Nicaragua",
+    "continent": "North America",
+    "region": "Central America",
+    "population": 5074000
+  },
+  {
+    "code": "NIU",
+    "name": "Niue",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "population": 2000
+  },
+  {
+    "code": "NLD",
+    "name": "Netherlands",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "population": 15864000
+  },
+  {
+    "code": "NOR",
+    "name": "Norway",
+    "continent": "Europe",
+    "region": "Nordic Countries",
+    "population": 4478500
+  },
+  {
+    "code": "NPL",
+    "name": "Nepal",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 23930000
+  },
+  {
+    "code": "NRU",
+    "name": "Nauru",
+    "continent": "Oceania",
+    "region": "Micronesia",
+    "population": 12000
+  },
+  {
+    "code": "NZL",
+    "name": "New Zealand",
+    "continent": "Oceania",
+    "region": "Australia and New Zealand",
+    "population": 3862000
+  },
+  {
+    "code": "OMN",
+    "name": "Oman",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 2542000
+  },
+  {
+    "code": "PAK",
+    "name": "Pakistan",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 156483000
+  },
+  {
+    "code": "PAN",
+    "name": "Panama",
+    "continent": "North America",
+    "region": "Central America",
+    "population": 2856000
+  },
+  {
+    "code": "PCN",
+    "name": "Pitcairn",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "population": 50
+  },
+  {
+    "code": "PER",
+    "name": "Peru",
+    "continent": "South America",
+    "region": "South America",
+    "population": 25662000
+  },
+  {
+    "code": "PHL",
+    "name": "Philippines",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "population": 75967000
+  },
+  {
+    "code": "PLW",
+    "name": "Palau",
+    "continent": "Oceania",
+    "region": "Micronesia",
+    "population": 19000
+  },
+  {
+    "code": "PNG",
+    "name": "Papua New Guinea",
+    "continent": "Oceania",
+    "region": "Melanesia",
+    "population": 4807000
+  },
+  {
+    "code": "POL",
+    "name": "Poland",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "population": 38653600
+  },
+  {
+    "code": "PRI",
+    "name": "Puerto Rico",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 3869000
+  },
+  {
+    "code": "PRK",
+    "name": "North Korea",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "population": 24039000
+  },
+  {
+    "code": "PRT",
+    "name": "Portugal",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 9997600
+  },
+  {
+    "code": "PRY",
+    "name": "Paraguay",
+    "continent": "South America",
+    "region": "South America",
+    "population": 5496000
+  },
+  {
+    "code": "PSE",
+    "name": "Palestine",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 3101000
+  },
+  {
+    "code": "PYF",
+    "name": "French Polynesia",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "population": 235000
+  },
+  {
+    "code": "QAT",
+    "name": "Qatar",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 599000
+  },
+  {
+    "code": "REU",
+    "name": "R\u00e9union",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 699000
+  },
+  {
+    "code": "ROM",
+    "name": "Romania",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "population": 22455500
+  },
+  {
+    "code": "IMN",
+    "name": "Isle of Man",
+    "continent": "Europe",
+    "region": "British Islands",
+    "population": 83314
+  },
+  {
+    "code": "RUS",
+    "name": "Russian Federation",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "population": 146934000
+  },
+  {
+    "code": "RWA",
+    "name": "Rwanda",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 7733000
+  },
+  {
+    "code": "SAU",
+    "name": "Saudi Arabia",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 21607000
+  },
+  {
+    "code": "SDN",
+    "name": "Sudan",
+    "continent": "Africa",
+    "region": "Northern Africa",
+    "population": 29490000
+  },
+  {
+  "code": "SSD",
+  "name": "South Sudan",
+  "continent": "Africa",
+  "region": "Central Africa",
+  "population": 12778250
+  },
+  {
+    "code": "SEN",
+    "name": "Senegal",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 9481000
+  },
+  {
+    "code": "SGP",
+    "name": "Singapore",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "population": 3567000
+  },
+  {
+    "code": "SGS",
+    "name": "South Georgia and the South Sandwich Islands",
+    "continent": "Antarctica",
+    "region": "Antarctica",
+    "population": 0
+  },
+  {
+    "code": "SHN",
+    "name": "Saint Helena",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 6000
+  },
+  {
+    "code": "SJM",
+    "name": "Svalbard and Jan Mayen",
+    "continent": "Europe",
+    "region": "Nordic Countries",
+    "population": 3200
+  },
+  {
+    "code": "SLB",
+    "name": "Solomon Islands",
+    "continent": "Oceania",
+    "region": "Melanesia",
+    "population": 444000
+  },
+  {
+    "code": "SLE",
+    "name": "Sierra Leone",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 4854000
+  },
+  {
+    "code": "SLV",
+    "name": "El Salvador",
+    "continent": "North America",
+    "region": "Central America",
+    "population": 6276000
+  },
+  {
+    "code": "SMR",
+    "name": "San Marino",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 27000
+  },
+  {
+    "code": "SOM",
+    "name": "Somalia",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 10097000
+  },
+  {
+    "code": "SPM",
+    "name": "Saint Pierre and Miquelon",
+    "continent": "North America",
+    "region": "North America",
+    "population": 7000
+  },
+  {
+    "code": "STP",
+    "name": "Sao Tome and Principe",
+    "continent": "Africa",
+    "region": "Central Africa",
+    "population": 147000
+  },
+  {
+    "code": "SUR",
+    "name": "Suriname",
+    "continent": "South America",
+    "region": "South America",
+    "population": 417000
+  },
+  {
+    "code": "SVK",
+    "name": "Slovakia",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "population": 5398700
+  },
+  {
+    "code": "SVN",
+    "name": "Slovenia",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 1987800
+  },
+  {
+    "code": "SWE",
+    "name": "Sweden",
+    "continent": "Europe",
+    "region": "Nordic Countries",
+    "population": 8861400
+  },
+  {
+    "code": "SWZ",
+    "name": "Swaziland",
+    "continent": "Africa",
+    "region": "Southern Africa",
+    "population": 1008000
+  },
+  {
+    "code": "SYC",
+    "name": "Seychelles",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 77000
+  },
+  {
+    "code": "SYR",
+    "name": "Syria",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 16125000
+  },
+  {
+    "code": "TCA",
+    "name": "Turks and Caicos Islands",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 17000
+  },
+  {
+    "code": "TCD",
+    "name": "Chad",
+    "continent": "Africa",
+    "region": "Central Africa",
+    "population": 7651000
+  },
+  {
+    "code": "TGO",
+    "name": "Togo",
+    "continent": "Africa",
+    "region": "Western Africa",
+    "population": 4629000
+  },
+  {
+    "code": "THA",
+    "name": "Thailand",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "population": 61399000
+  },
+  {
+    "code": "TJK",
+    "name": "Tajikistan",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 6188000
+  },
+  {
+    "code": "TKL",
+    "name": "Tokelau",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "population": 2000
+  },
+  {
+    "code": "TKM",
+    "name": "Turkmenistan",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 4459000
+  },
+  {
+    "code": "TMP",
+    "name": "East Timor",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "population": 885000
+  },
+  {
+    "code": "TON",
+    "name": "Tonga",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "population": 99000
+  },
+  {
+    "code": "TTO",
+    "name": "Trinidad and Tobago",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 1295000
+  },
+  {
+    "code": "TUN",
+    "name": "Tunisia",
+    "continent": "Africa",
+    "region": "Northern Africa",
+    "population": 9586000
+  },
+  {
+    "code": "TUR",
+    "name": "Turkey",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 66591000
+  },
+  {
+    "code": "TUV",
+    "name": "Tuvalu",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "population": 12000
+  },
+  {
+    "code": "TWN",
+    "name": "Taiwan",
+    "continent": "Asia",
+    "region": "Eastern Asia",
+    "population": 22256000
+  },
+  {
+    "code": "TZA",
+    "name": "Tanzania",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 33517000
+  },
+  {
+    "code": "UGA",
+    "name": "Uganda",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 21778000
+  },
+  {
+    "code": "UKR",
+    "name": "Ukraine",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "population": 50456000
+  },
+  {
+    "code": "UMI",
+    "name": "United States Minor Outlying Islands",
+    "continent": "Oceania",
+    "region": "Micronesia/Caribbean",
+    "population": 0
+  },
+  {
+    "code": "URY",
+    "name": "Uruguay",
+    "continent": "South America",
+    "region": "South America",
+    "population": 3337000
+  },
+  {
+    "code": "USA",
+    "name": "United States",
+    "continent": "North America",
+    "region": "North America",
+    "population": 278357000
+  },
+  {
+    "code": "UZB",
+    "name": "Uzbekistan",
+    "continent": "Asia",
+    "region": "Southern and Central Asia",
+    "population": 24318000
+  },
+  {
+    "code": "VAT",
+    "name": "Holy See (Vatican City State)",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 1000
+  },
+  {
+    "code": "VCT",
+    "name": "Saint Vincent and the Grenadines",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 114000
+  },
+  {
+    "code": "VEN",
+    "name": "Venezuela",
+    "continent": "South America",
+    "region": "South America",
+    "population": 24170000
+  },
+  {
+    "code": "VGB",
+    "name": "Virgin Islands, British",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 21000
+  },
+  {
+    "code": "VIR",
+    "name": "Virgin Islands, U.S.",
+    "continent": "North America",
+    "region": "Caribbean",
+    "population": 93000
+  },
+  {
+    "code": "VNM",
+    "name": "Vietnam",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "population": 79832000
+  },
+  {
+    "code": "VUT",
+    "name": "Vanuatu",
+    "continent": "Oceania",
+    "region": "Melanesia",
+    "population": 190000
+  },
+  {
+    "code": "WLF",
+    "name": "Wallis and Futuna",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "population": 15000
+  },
+  {
+    "code": "WSM",
+    "name": "Samoa",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "population": 180000
+  },
+  {
+    "code": "YEM",
+    "name": "Yemen",
+    "continent": "Asia",
+    "region": "Middle East",
+    "population": 18112000
+  },
+  {
+    "code": "YUG",
+    "name": "Yugoslavia",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "population": 10640000
+  },
+  {
+    "code": "ZAF",
+    "name": "South Africa",
+    "continent": "Africa",
+    "region": "Southern Africa",
+    "population": 40377000
+  },
+  {
+    "code": "ZMB",
+    "name": "Zambia",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 9169000
+  },
+  {
+    "code": "ZWE",
+    "name": "Zimbabwe",
+    "continent": "Africa",
+    "region": "Eastern Africa",
+    "population": 11669000
+  }
+]

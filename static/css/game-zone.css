@@ -1,0 +1,125 @@
+/* gameZone container */
+
+#game-container {
+    display: flex;
+    border-radius: 0.6rem;
+    width: auto;
+    justify-content: space-between;
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: var(--color-skyblue-light-transparent-04) var(--color-white-light-transparent);
+    scrollbar-width: thin;
+  }
+  
+  #game-container::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  #game-container::-webkit-scrollbar-thumb {
+    background: var(--color-skyblue-light);
+    border-radius: 0.4rem;
+    opacity: 4%;
+  }
+  
+  #game-container::-webkit-scrollbar-thumb:hover {
+    background: var(--color-skyblue);
+  }
+  
+  #game-container .action-console {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+    height: calc(70vw * 0.45);
+    margin: 0;
+    border-radius: 0.6rem;
+    background-color: var(--color-skyblue-light-transparent-04);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #game-container .action-console .action-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5vw;
+    height: calc(70vw * 0.45);
+    padding: 0;
+    border-radius: 0 0.6rem 0.6rem 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-gray-dark);
+  }
+  
+  #game-container .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33vw;
+    height: calc(70vw * 0.45);
+    border-radius: 0.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+    color: var(--color-gray-dark);
+    background-color: var(--color-skyblue-light-transparent-04);
+  }
+  
+  #game-container .stats table {
+    display: flex;
+    flex-direction: row;
+    table-layout: fixed;
+  } 
+  
+  #game-container .stats tbody {
+    width: 100%;
+  } 
+  
+  #game-container .stats .table-headers {
+    margin-bottom: 0.6rem;
+  } 
+  
+  #game-container .stats table th,
+  #game-container .stats table td {
+    padding: 0 0.6rem;
+  } 
+  
+  #game-container .stats .table-content tr:hover {
+    padding: 0 0.6rem;
+    background-color: var(--color-skyblue-light-transparent-04);
+  } 
+  
+  #game-container .stats .my-scores,
+  #game-container .stats .top-players {
+    margin-bottom: 1rem;
+  }
+  
+  #game-container .stats h2 {
+    background-color: var(--color-skyblue-light-transparent-04);
+    padding: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  #game-container .stats .date,
+  #game-container .stats .username {
+    width: 14vw;
+    text-align: left;
+  }
+  
+  #game-container .stats .score {
+    width: 8vw;
+    text-align: left;
+  }
+  
+  #game-container .stats .like,
+  #game-container .stats .comment {
+    width: 6vw;
+    text-align: left;
+  }
+  
+  #game-container .stats .like i,
+  #game-container .stats .comment i {
+    text-align: left;
+    padding-right: 0.4rem;
+  }

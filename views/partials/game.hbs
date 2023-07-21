@@ -1,0 +1,14 @@
+<div class="game-card">
+  <a href="{{concat '/games/' name}}">
+    <div id="game-card-icon">
+      <img src="{{concat '/static/img/gameIcons/' iconFile}}" alt={{name}} />
+    </div>
+    <div id="game-card-details">
+      <h2>{{name}}</h2>
+      <p>{{genre}}</p>
+      <div class="rating">
+        {{> rating}}
+      </div>
+    </div>
+  </a>
+</div>
