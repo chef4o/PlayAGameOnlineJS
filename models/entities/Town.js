@@ -25,6 +25,15 @@ const townSchema = new Schema({
   },
 });
 
+townSchema.statics.isEmptySchema = async function () {
+  try {
+    const count = await this.countDocuments().exec();
+    return count === 0;
+  } catch (error) {
+    throw new Error('Error occurred while checking if Town collection is empty:', error);
+  }
+};
+
 const Town = model("Town", townSchema);
 
 module.exports = Town;

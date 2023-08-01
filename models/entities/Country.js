@@ -37,6 +37,18 @@ const countrySchema = new Schema({
   },
 });
 
+countrySchema.statics.isEmptySchema = async function () {
+  try {
+    const count = await this.countDocuments().exec();
+    return count === 0;
+  } catch (error) {
+    throw new Error(
+      "Error occurred while checking if Contry collection is empty:",
+      error
+    );
+  }
+};
+
 const Country = model("Country", countrySchema);
 
 module.exports = Country;

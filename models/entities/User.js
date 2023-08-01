@@ -1,13 +1,16 @@
-const { Schema, model, Types: {ObjectId } } = require("mongoose");
-const { isEmail, isEmpty } = require("validator");
+const {
+  Schema,
+  model,
+  Types: { ObjectId },
+} = require("mongoose");
+const { isEmail } = require("validator");
 
-const roles = require("../enums/roles.json");
-const genders = require("../enums/genders.json");
+const Role = require("../enums/roles");
+const Gender = require("../enums/genders");
 
 const USERNAME_MIN_LENGTH = 3;
 const USERNAME_INVALID_MESSAGE = `Username must be at least ${USERNAME_MIN_LENGTH} characters long.`;
 const EMAIL_INVALID_MESSAGE = "The email address must be valid.";
-const EMPTY_FIELD = "The field cannot be empty.";
 
 const userSchema = new Schema({
   firstName: {
@@ -42,14 +45,14 @@ const userSchema = new Schema({
   },
   gender: {
     type: String,
-    enum: genders,
+    enum: Object.values(Gender),
   },
   avatarPath: {
     type: String,
   },
   role: {
     type: String,
-    enum: roles,
+    enum: Object.values(Role),
     required: true,
   },
 });
@@ -67,6 +70,27 @@ userSchema.index(
 userSchema.virtual("age").get(function () {
   return Math.abs(new Date(Date.now() - this.dateOfBirth).getFullYear - 1970);
 });
+
+userSchema.virtual("hasAllOptions").get(function () {
+  return (
+    this.gender && this.gender.toUpperCase() != Gender.NONE &&
+    this.dateOfBirth && this.dateOfBirth != this.defaultDob &&
+    this.town
+  );
+});
+
+userSchema.virtual("defaultDob").get(function () {
+  return "1900-01-01";
+});
+
+userSchema.statics.isEmptySchema = async function () {
+  try {
+    const count = await this.countDocuments().exec();
+    return count === 0;
+  } catch (error) {
+    throw new Error('Error occurred while checking if User collection is empty:', error);
+  }
+};
 
 const User = model("User", userSchema);
 

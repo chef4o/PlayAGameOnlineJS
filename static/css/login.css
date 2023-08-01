@@ -45,7 +45,7 @@
     border-radius: 0.2rem;
 }
 
-.login-form .element #email {
+.login-form .element #user {
     width: calc(100% - 5.2rem);
 }
 

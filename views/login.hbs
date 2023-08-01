@@ -1,28 +1,25 @@
 <main>
-  <form
-    class="login-form"
-    enctype="multipart/form-data"
-    method="post"
-    action="/auth/login"
-  >
+  <form class="login-form" enctype="multipart/form-data" method="post" action="/auth/login">
     <h1>Access your gaming account</h1>
 
     <div class="container">
       <div class="element">
-        <label for="email"><b>Email</b></label>
-        <input
-          id="email"
-          type="text"
-          name="email"
-          required
-          value="{{body.email}}"
-        />
+        <label for="user"><b>User</b></label>
+        <input id="user" type="text" name="user" required value="{{body.user}}" />
       </div>
+
+      {{#if errors}}
+      <p class="error">{{error}}</p>
+      {{/if}}
 
       <div class="element">
         <label for="pass"><b>Password</b></label>
         <input id="pass" type="password" name="password" required />
       </div>
+
+      {{#if errors}}
+      <p class="error">{{error}}</p>
+      {{/if}}
 
       <div class="element">
         <button type="submit" class="login-btn">Login</button>
@@ -31,7 +28,8 @@
 
     <div id="register-prompt">
       <p>Don't have an account yet? Please
-        <a href="/auth/register">register.</a></p>
+        <a href="/auth/register">register.</a>
+      </p>
     </div>
   </form>
 
