@@ -17,7 +17,7 @@
 
           <div class="param">
             <label for="last-name">Last name</label>
-            <input id="last-name" type="text" name="lastName" placeholder="e.g. 'Bond'" size="15" required />
+            <input id="last-name" type="text" name="lastName" placeholder="e.g. 'Bond'" size="15" />
           </div>
           {{#if errors}}
           <p class="error">{{error}}</p>
@@ -44,8 +44,8 @@
 
         <div class="param-group">
           <div class="param">
-            <label for="pass"><b>Password</b></label>
-            <input id="pass" type="password" placeholder="minimum 8 characters" name="password" required />
+            <label for="password"><b>Password</b></label>
+            <input id="papasswordss" type="password" placeholder="minimum 8 characters" name="password" required />
           </div>
 
           <div class="param">
@@ -68,7 +68,7 @@
 
           <select id="gender" name="gender">
             {{#each genders}}
-            <option text="{{this}}" value="{{this}}"></option>
+            <option text="{{this}}" value="{{this}}">{{this}}</option>
             {{/each}}
           </select>
         </div>

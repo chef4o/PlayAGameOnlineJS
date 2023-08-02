@@ -5,8 +5,8 @@ const {
 } = require("mongoose");
 const { isEmail } = require("validator");
 
-const Role = require("../enums/roles");
-const Gender = require("../enums/genders");
+const Role = require("../enums/Role");
+const Gender = require("../enums/Gender");
 
 const USERNAME_MIN_LENGTH = 3;
 const USERNAME_INVALID_MESSAGE = `Username must be at least ${USERNAME_MIN_LENGTH} characters long.`;
@@ -53,7 +53,6 @@ const userSchema = new Schema({
   role: {
     type: String,
     enum: Object.values(Role),
-    required: true,
   },
 });
 
@@ -80,7 +79,7 @@ userSchema.virtual("hasAllOptions").get(function () {
 });
 
 userSchema.virtual("defaultDob").get(function () {
-  return "1900-01-01";
+  return new Date("1900-01-01");
 });
 
 userSchema.statics.isEmptySchema = async function () {

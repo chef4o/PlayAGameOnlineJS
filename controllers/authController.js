@@ -2,17 +2,21 @@ const { register, login } = require("../services/userService");
 const { parseError } = require("../util/parser");
 const authController = require("express").Router();
 
+const genders = require("../models/enums/Gender");
+
 const PASSWORDS_MISMATCH = "Passwords do not match";
 
 authController.get("/register", (req, res) => {
   res.render("register", {
     title: "Register with P@GO",
+    genders: Object.values(genders),
   });
 });
 
 authController.post("/register", async (req, res) => {
   try {
-    if (req.body.pass != req.body.re - pass) {
+
+    if (req.body.password != req.body.rePass) {
       throw new Error(PASSWORDS_MISMATCH);
     }
 
@@ -32,6 +36,7 @@ authController.post("/register", async (req, res) => {
     res.redirect("/");
   } catch (error) {
     const errors = parseError(error);
+    console.log(errors);
 
     res.render("register", {
       title: "Register Page",
@@ -52,7 +57,7 @@ authController.get("/login", (req, res) => {
 
 authController.post("/login", async (req, res) => {
   try {
-        const token = await login(req.body.user, req.body.pass);
+    const token = await login(req.body.user, req.body.password);
 
     res.cookie("token", token);
     res.redirect("/");

@@ -24,7 +24,7 @@ async function seedData(app) {
 
 async function loadCountries() {
   try {
-    if (await Country.isEmptySchema()) {
+    if (await Country.isEmptySchema) {
       console.log(COUNTRIES_DB_EXIXSTS);
       return;
     }
@@ -56,7 +56,7 @@ async function loadCountries() {
 
 async function loadTowns() {
   try {
-    if (await Town.isEmptySchema()) {
+    if (await Town.isEmptySchema) {
       console.log(TOWNS_DB_EXIXSTS);
       return;
     }
@@ -89,7 +89,7 @@ async function loadTowns() {
 
 async function loadGames() {
   try {
-    if (await Game.isEmptySchema()) {
+    if (await Game.isEmptySchema) {
       console.log(GAMES_DB_EXIXSTS);
       return;
     }

@@ -1,5 +1,6 @@
 const User = require("../models/entities/User");
-const Role = require("../enums/roles");
+const Town = require("../models/entities/Town");
+const Role = require("../models/enums/Role");
 
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
@@ -13,6 +14,8 @@ const GENERAL_LOGIN_ERROR = "The username or password is incorrect.";
 const MISSING_MANDATORY_FIELDS_DATA = "All fields are required";
 const INVALID_EMAIL = "Email address is invalid";
 const DEFAULT_REG_YEAR = "1900-01-01";
+const NON_EXISTING_TOWN =
+  "Your town does not exist in our database. Please try with a bigger city nearby";
 
 async function register(
   email,
@@ -25,9 +28,9 @@ async function register(
   gender,
   avatarPath
 ) {
-  validateFields(email, username, pass, firstName);
+  validateFields(email, username, password, firstName);
 
-  dateOfBirth = DEFAULT_REG_YEAR ? null : dateOfBirth;
+  dateOfBirth == DEFAULT_REG_YEAR ? null : new Date(dateOfBirth);
 
   await ensureNewUser(email, username);
 
@@ -39,13 +42,14 @@ async function register(
     hashedPassword,
     firstName,
     lastName,
-    town,
     dateOfBirth,
     gender,
     avatarPath,
   });
 
   await setRole(user);
+  await setTown(town, user);
+  user.save();
 
   return createSession({ email, username });
 }
@@ -60,12 +64,12 @@ async function login(loginName, password) {
 
   const match = await bcrypt.compare(password, user.hashedPassword);
 
-  ensureUserExists(user, match);
+  ensureUserExists(user, loginName, match);
   return createSession(user);
 }
 
 async function setRole(user) {
-  if (await User.isEmptySchema()) {
+  if (await User.countDocuments().exec() === 1) {
     user.role = Role.SUPER_ADMIN;
   } else if (user.hasAllOptions) {
     user.role = Role.NORMAL;
@@ -74,7 +78,21 @@ async function setRole(user) {
   }
 }
 
-function ensureUserExists(user, match) {
+async function setTown(town, user) {
+  let existingTown;
+  if (town) {
+    const townInsensitiveRegex = new RegExp(`^${town}$`, 'i');
+    existingTown = await Town.findOne({
+      name: { $regex: townInsensitiveRegex },
+    });
+  }
+
+  if(existingTown) {
+    user.town = existingTown;
+  }
+}
+
+function ensureUserExists(user, loginName, match) {
   if (
     !user ||
     !match ||
@@ -89,7 +107,9 @@ async function ensureNewUser(email, username) {
   const lowercasedEmail = email.toLowerCase();
   const lowercasedUsername = username.toLowerCase();
 
-  const existingUserWithEmail = await User.findOne({ email: lowercasedEmail }).collation({
+  const existingUserWithEmail = await User.findOne({
+    email: lowercasedEmail,
+  }).collation({
     locale: "en",
     strength: 2,
   });
@@ -130,8 +150,7 @@ function createSession(user) {
     username: user.username,
   };
 
-  const token = jwt.sign(payload, TKN);
-  return token;
+  return jwt.sign(payload, TKN);
 }
 
 function verifyToken(token) {

@@ -1,6 +1,6 @@
 const { Schema, model, Types: {ObjectId } } = require("mongoose");
 
-const genres = require("../enums/genres.json");
+const genres = require("../enums/Genre");
 
 const LENGTH = 2;
 const NAME_VALIDATION_MESSAGE = `Game name must be at least ${LENGTH} characters long.`;
@@ -47,6 +47,15 @@ const gameSchema = new Schema({
     ref: "Comment",
   },
 });
+
+gameSchema.statics.isEmptySchema = async function () {
+  try {
+    const count = await this.countDocuments().exec();
+    return count === 0;
+  } catch (error) {
+    throw new Error('Error occurred while checking if Game collection is empty:', error);
+  }
+};
 
 const Game = model("Game", gameSchema);
 
