@@ -1,4 +1,4 @@
-const { register, login } = require("../services/userService");
+const { register, login } = require("../services/authService");
 const { parseError } = require("../util/parser");
 const authController = require("express").Router();
 
