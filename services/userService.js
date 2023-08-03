@@ -57,9 +57,8 @@ async function register(
 async function login(loginName, password) {
   validateFields(loginName, password);
 
-  const user = await User.findOne({ loginName }).collation({
-    locale: "en",
-    strength: 2,
+  const user = await User.findOne({
+    $regex: new RegExp(`^${loginName.toLowerCase()}$`, "i"),
   });
 
   const match = await bcrypt.compare(password, user.hashedPassword);
@@ -69,7 +68,7 @@ async function login(loginName, password) {
 }
 
 async function setRole(user) {
-  if (await User.countDocuments().exec() === 1) {
+  if ((await User.countDocuments().exec()) === 1) {
     user.role = Role.SUPER_ADMIN;
   } else if (user.hasAllOptions) {
     user.role = Role.NORMAL;
@@ -81,41 +80,44 @@ async function setRole(user) {
 async function setTown(town, user) {
   let existingTown;
   if (town) {
-    const townInsensitiveRegex = new RegExp(`^${town}$`, 'i');
+    const townInsensitiveRegex = new RegExp(`^${town}$`, "i");
     existingTown = await Town.findOne({
       name: { $regex: townInsensitiveRegex },
     });
   }
 
-  if(existingTown) {
+  if (existingTown) {
     user.town = existingTown;
   }
 }
 
 function ensureUserExists(user, loginName, match) {
+
+  console.log("user email: " + user.email.toLowerCase());
+  console.log("user username: " + user.username.toLowerCase());
+  console.log("login name: " + loginName.toLowerCase());
+
   if (
     !user ||
     !match ||
     (user.email.toLowerCase() != loginName.toLowerCase() &&
       user.username.toLowerCase() != loginName.toLowerCase())
   ) {
+    console.log(GENERAL_LOGIN_ERROR);
     throw new Error(GENERAL_LOGIN_ERROR);
   }
 }
 
 async function ensureNewUser(email, username) {
-  const lowercasedEmail = email.toLowerCase();
-  const lowercasedUsername = username.toLowerCase();
-
   const existingUserWithEmail = await User.findOne({
-    email: lowercasedEmail,
+    email: email.toLowerCase(),
   }).collation({
     locale: "en",
     strength: 2,
   });
 
   const existingUserWithUsername = await User.findOne({
-    username: { $regex: new RegExp(`^${lowercasedUsername}$`, "i") }, // Case-insensitive regex search
+    username: { $regex: new RegExp(`^${username.toLowerCase()}$`, "i") },
   });
 
   if (existingUserWithEmail) {
@@ -148,6 +150,7 @@ function createSession(user) {
   const payload = {
     email: user.email,
     username: user.username,
+    hasAdminRights: user.hasAdminRights,
   };
 
   return jwt.sign(payload, TKN);

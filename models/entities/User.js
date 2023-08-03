@@ -78,6 +78,10 @@ userSchema.virtual("hasAllOptions").get(function () {
   );
 });
 
+userSchema.virtual("hasAdminRights").get(function () {
+  return this.role === Role.ADMIN || this.role === Role.SUPER_ADMIN;
+});
+
 userSchema.virtual("defaultDob").get(function () {
   return new Date("1900-01-01");
 });
