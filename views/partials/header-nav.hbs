@@ -6,10 +6,10 @@
     </a>
 
     {{#if user}}
-      <a class="username" href="/user/profile">
-        <i class="fa-regular fa-user"></i>
-        <span>{{user.username}}</span>
-      </a>
+    <a class="username" href="/user/profile">
+      <i class="fa-regular fa-user"></i>
+      <span>{{user.username}}</span>
+    </a>
     {{/if}}
 
     <ul id="nav-bar">
@@ -18,18 +18,14 @@
 
       {{#if user}}
 
-        {{#if user.hasAdminRights}}
-          <li><a href="/admin-panel">Admin Panel</a></li>
-        {{/if}}
+      {{#if user.hasAdminRights}}
+      <li><a href="/admin-panel">Admin Panel</a></li>
+      {{/if}}
 
-        <li>
-          <form method="post" action="/auth/logout">
-            <button id="logout" type="submit">Logout</button>
-          </form>
-        </li>
+      <li><a href="/auth/logout">Logout</a></li>
 
       {{else}}
-        <li><a href="/auth/login">Login</a></li>
+      <li><a href="/auth/login">Login</a></li>
       {{/if}}
     </ul>
   </nav>

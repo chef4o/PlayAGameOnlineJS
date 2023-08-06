@@ -15,7 +15,6 @@ authController.get("/register", (req, res) => {
 
 authController.post("/register", async (req, res) => {
   try {
-
     if (req.body.password != req.body.rePass) {
       throw new Error(PASSWORDS_MISMATCH);
     }

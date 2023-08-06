@@ -1,5 +1,10 @@
 const User = require("../models/entities/User");
-const { setRole, setTown, ensureUserExists, ensureNewUser } = require("./userService");
+const {
+  setRole,
+  setTown,
+  ensureUserExists,
+  ensureNewUser,
+} = require("./userService");
 
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
@@ -86,7 +91,9 @@ function createSession(user) {
     hasAdminRights: user.hasAdminRights,
   };
 
-  return jwt.sign(payload, TKN);
+  return jwt.sign(payload, TKN, {
+      expiresIn: "1h",
+    });
 }
 
 function verifyToken(token) {
