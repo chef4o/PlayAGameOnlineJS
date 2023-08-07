@@ -1,7 +1,13 @@
-.error p {
+p.error {
     color: orangered;
     text-align: center;
+    font-size: 0.9rem;
 }
+
+p.field-param.error {
+    padding-left: 5.2rem;
+}
+
 
 .error a {
     color: var(--color-gray-dark);

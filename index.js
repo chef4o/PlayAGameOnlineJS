@@ -3,8 +3,7 @@ const expressConfig = require("./config/expressConfig");
 const databaseConfig = require("./config/databaseConfig");
 const routesConfig = require("./config/routesConfig");
 const seedData = require("./config/seedDataConfig");
-
-const SERVER_PORT = 3000;
+const {SERVER_PORT} = require('./local/env');
 
 start();
 

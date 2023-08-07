@@ -11,17 +11,21 @@
             <label for="first-name">First name</label>
             <input id="first-name" type="text" name="firstName" placeholder="e.g. 'James'" size="15" required />
             {{#if errors}}
-            <p class="error">{{error}}</p>
+            {{#each errors}}
+            <p class="field-param error">{{this}}</p>
+            {{/each}}
             {{/if}}
           </div>
 
           <div class="param">
             <label for="last-name">Last name</label>
             <input id="last-name" type="text" name="lastName" placeholder="e.g. 'Bond'" size="15" />
+            {{#if errors}}
+            {{#each errors}}
+            <p class="field-param error">{{this}}</p>
+            {{/each}}
+            {{/if}}
           </div>
-          {{#if errors}}
-          <p class="error">{{error}}</p>
-          {{/if}}
         </div>
 
         <div class="param-group">
@@ -29,33 +33,49 @@
             <label for="username">Username</label>
             <input id="username" type="text" name="username" placeholder="must be unique" size="15" required />
             {{#if errors}}
-            <p class="error">{{error}}</p>
+            {{#each errors}}
+            <p class="field-param error">{{this}}</p>
+            {{/each}}
             {{/if}}
           </div>
 
           <div class="param">
             <label for="email"><b>Email</b></label>
             <input id="email" type="text" placeholder="must be valid" name="email" required />
+            {{#if errors}}
+            {{#each errors}}
+            <p class="field-param error">{{this}}</p>
+            {{/each}}
+            {{/if}}
           </div>
-          {{#if errors}}
-          <p class="error">{{error}}</p>
-          {{/if}}
         </div>
 
         <div class="param-group">
           <div class="param">
             <label for="password"><b>Password</b></label>
-            <input id="papasswordss" type="password" placeholder="minimum 8 characters" name="password" required />
+            <input id="password" type="password" placeholder="minimum 8 characters" name="password" required />
+            {{#if errors}}
+            {{#each errors}}
+            <p class="field-param error">{{this}}</p>
+            {{/each}}
+            {{/if}}
           </div>
 
           <div class="param">
             <label for="rePass"><b>Confirm</b></label>
             <input id="rePass" type="password" placeholder="retype your password" name="rePass" required />
+            {{#if errors}}
+            {{#each errors}}
+            <p class="field-param error">{{this}}</p>
+            {{/each}}
+            {{/if}}
           </div>
         </div>
 
         {{#if errors}}
-        <p class="error">{{error}}</p>
+        {{#each errors}}
+        <p class="error">{{this}}</p>
+        {{/each}}
         {{/if}}
         <button type="submit" class="register-btn">Register</button>
       </div>

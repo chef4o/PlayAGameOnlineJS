@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const {DB_IP, BKP_DB_IP, DB_PORT, DB_SCHEMA} = require('../local/env.json');
+const {DB_IP, BKP_DB_IP, DB_PORT, DB_SCHEMA} = require('../local/env');
 
 const DB_CONNECTION_STRING = `mongodb://${DB_IP}:${DB_PORT}/${DB_SCHEMA}`;
 const BCK_DB_CONNECTION_STRING = `mongodb://${BKP_DB_IP}:${DB_PORT}/${DB_SCHEMA}`;

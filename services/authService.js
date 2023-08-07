@@ -8,7 +8,7 @@ const {
 
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const { TKN } = require("../local/env.json");
+const { TKN, TKN_EXP_TIME } = require("../local/env");
 const validator = require("validator");
 
 const MISSING_MANDATORY_FIELDS_DATA = "All fields are required";
@@ -92,8 +92,8 @@ function createSession(user) {
   };
 
   return jwt.sign(payload, TKN, {
-      expiresIn: "1h",
-    });
+    expiresIn: TKN_EXP_TIME,
+  });
 }
 
 function verifyToken(token) {

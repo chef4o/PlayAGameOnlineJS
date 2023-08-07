@@ -1,6 +1,7 @@
 const { register, login } = require("../services/authService");
 const { parseError } = require("../util/parser");
 const authController = require("express").Router();
+const { SESSION_EXP_TIME_MS } = require("../local/env");
 
 const genders = require("../models/enums/Gender");
 
@@ -31,7 +32,7 @@ authController.post("/register", async (req, res) => {
       req.body.avatarPath
     );
 
-    res.cookie("token", token);
+    res.cookie("token", token, { maxAge: SESSION_EXP_TIME_MS });
     res.redirect("/");
   } catch (error) {
     const errors = parseError(error);
@@ -58,7 +59,8 @@ authController.post("/login", async (req, res) => {
   try {
     const token = await login(req.body.user, req.body.password);
 
-    res.cookie("token", token);
+    res.cookie("token", token, { maxAge: SESSION_EXP_TIME_MS });
+
     res.redirect("/");
   } catch (error) {
     const errors = parseError(error);

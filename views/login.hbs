@@ -8,17 +8,15 @@
         <input id="user" type="text" name="user" required value="{{body.user}}" />
       </div>
 
-      {{#if errors}}
-      <p class="error">{{error}}</p>
-      {{/if}}
-
       <div class="element">
         <label for="password"><b>Password</b></label>
         <input id="password" type="password" name="password" required />
       </div>
 
       {{#if errors}}
-      <p class="error">{{error}}</p>
+      {{#each errors}}
+      <p class="error">{{this}}</p>
+      {{/each}}
       {{/if}}
 
       <div class="element">
