@@ -1,6 +1,6 @@
 const User = require("../models/entities/User");
 const Town = require("../models/entities/Town");
-const Role = require("../models/enums/Role");
+const { Role } = require("../models/enums/Role");
 
 const EXISTING_EMAIL =
   "The email address is already registered on this website.";
@@ -12,11 +12,11 @@ const NON_EXISTING_TOWN =
 
 async function setRole(user) {
   if ((await User.countDocuments().exec()) === 1) {
-    user.role = Role.SUPER_ADMIN;
+    user.role = Role.SUPER_ADMIN.name;
   } else if (user.hasAllOptions) {
-    user.role = Role.NORMAL;
+    user.role = Role.NORMAL.name;
   } else {
-    user.role = Role.LIGHT;
+    user.role = Role.LIGHT.name;
   }
 }
 
@@ -66,9 +66,27 @@ async function ensureNewUser(email, username) {
   }
 }
 
+async function getSubUsers(user) {
+  return await User.find({
+    role: { $in: getLowerRoles(user.role) },
+  }).lean();
+}
+
+function getLowerRoles(role) {
+  const lowerRoles = [];
+  for (const instance in Role) {
+    const currentRole = Role[instance];
+    if (currentRole.index < Role[role].index) {
+      lowerRoles.push(currentRole.name);
+    }
+  }
+  return lowerRoles;
+}
+
 module.exports = {
   setRole,
   setTown,
   ensureUserExists,
   ensureNewUser,
+  getSubUsers,
 };

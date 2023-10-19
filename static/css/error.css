@@ -1,6 +1,10 @@
+.error, 
 p.error {
     color: orangered;
     text-align: center;
+}
+
+p.error {
     font-size: 0.9rem;
 }
 

@@ -45,8 +45,10 @@ async function register(
     avatarPath,
   });
 
+  if (!town.trim() == "") {
+    await setTown(town, user);
+  }
   await setRole(user);
-  await setTown(town, user);
   user.save();
 
   return createSession({ email, username });
@@ -88,6 +90,7 @@ function createSession(user) {
   const payload = {
     email: user.email,
     username: user.username,
+    role: user.role,
     hasAdminRights: user.hasAdminRights,
   };
 

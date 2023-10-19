@@ -1,0 +1,29 @@
+<form class="update-form" enctype="multipart/form-data" method="patch" action="/admin-panel/edit/{{this._id}}">
+    <div class="param-group">
+        <div class="param">
+            <input id="email" type="text" name="email" value="{{this.email}}" required>
+        </div>
+
+        <div class="param">
+            <input id="username" type="text" name="username" value="{{this.username}}" required />
+        </div>
+
+        <select class="change-roles" name="new-role" required="true">
+            {{#each ../currentRolesArray}}
+            {{#if this.isCurrent}}
+            <option id="{{this.name}}" selected="true" value="{{this.name}}" text="{{this.name}}">
+            </option>
+            {{else}}
+            <option id="{{this.name}}" value="{{this.name}}" text="{{this.name}}">
+            </option>
+            {{/if}}
+            {{/each}}
+        </select>
+    </div>
+
+    <div class="btn-group">
+        <a class="admin-form-btn" onclick="return confirm('Are you sure that you want to update the marked user?');"
+            href="/admin-panel/edit/{{this._id}}">Update</a>
+        <a class="admin-form-btn" href="/admin-panel">Cancel</a>
+    </div>
+</form>

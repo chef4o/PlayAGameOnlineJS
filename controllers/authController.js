@@ -35,15 +35,13 @@ authController.post("/register", async (req, res) => {
     res.cookie("token", token, { maxAge: SESSION_EXP_TIME_MS });
     res.redirect("/");
   } catch (error) {
-    const errors = parseError(error);
-    console.log(errors);
 
     res.render("register", {
       title: "Register Page",
-      errors,
       body: {
         email: req.body.email,
         username: req.body.username,
+        error: parseError(error),
       },
     });
   }

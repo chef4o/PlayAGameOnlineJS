@@ -1,0 +1,21 @@
+<form class="update-form" enctype="multipart/form-data" method="get">
+    <div class="param-group">
+        <div class="param">
+            <input id="email" type="text" name="email" value="{{this.email}}" disabled="true">
+        </div>
+
+        <div class="param">
+            <input id="username" type="text" name="username" value="{{this.username}}" disabled="true" />
+        </div>
+
+        <div class="param-role">
+            <input id="role" type="text" name="role" value="{{this.role}}" disabled="true" />
+        </div>
+    </div>
+
+    <div class="btn-group">
+        <a class="admin-form-btn" href="/admin-panel/edit/{{this._id}}">Edit</a>
+        <a class="admin-form-btn" onclick="return confirm('Are you sure that you want to delete the marked user?');"
+            href="/admin-panel/delete/{{this._id}}">Delete</a>
+    </div>
+</form>

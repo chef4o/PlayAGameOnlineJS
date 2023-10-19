@@ -1,0 +1,31 @@
+<main>
+    {{#if user.hasAdminRights}}
+    <h1>Admin panel</h1>
+
+    <div class="admin-panel-container">
+        {{#if subUsers}}
+        <table class="admin-panel-users">
+            <tr class="fields">
+                <th id="header-username">Username</th>
+                <th id="header-email">Email</th>
+                </th>
+                <th id="header-role">Role</th>
+            </tr>
+            <tr class="fill-space"></tr>
+        </table>
+
+        {{#each subUsers}}
+        <th class="user-data">
+            {{#if this.toEdit}}
+            {{> adminUserFormEdit}}
+            {{else}}
+            {{> adminUserForm}}
+            {{/if}}
+        </th>
+        {{/each}}
+        {{else}}
+        <p>No users available for administration.</p>
+        {{/if}}
+    </div>
+    {{/if}}
+</main>

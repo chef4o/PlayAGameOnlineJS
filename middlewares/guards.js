@@ -1,5 +1,6 @@
 function hasUser() {
     return (req, res, next) => {
+        console.log('redirecting')
         if (req.user) {
             next();
         } else {

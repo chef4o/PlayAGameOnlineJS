@@ -5,7 +5,7 @@ const {
 } = require("mongoose");
 const { isEmail } = require("validator");
 
-const Role = require("../enums/Role");
+const { Role, roleNames } = require("../enums/Role");
 const Gender = require("../enums/Gender");
 
 const USERNAME_MIN_LENGTH = 3;
@@ -52,7 +52,7 @@ const userSchema = new Schema({
   },
   role: {
     type: String,
-    enum: Object.values(Role),
+    enum: roleNames,
   },
 });
 
@@ -72,14 +72,16 @@ userSchema.virtual("age").get(function () {
 
 userSchema.virtual("hasAllOptions").get(function () {
   return (
-    this.gender && this.gender.toUpperCase() != Gender.NONE &&
-    this.dateOfBirth && this.dateOfBirth != this.defaultDob &&
+    this.gender &&
+    this.gender.toUpperCase() != Gender.NONE &&
+    this.dateOfBirth &&
+    this.dateOfBirth != this.defaultDob &&
     this.town
   );
 });
 
 userSchema.virtual("hasAdminRights").get(function () {
-  return this.role === Role.ADMIN || this.role === Role.SUPER_ADMIN;
+  return this.role === Role.ADMIN.name || this.role === Role.SUPER_ADMIN.name;
 });
 
 userSchema.virtual("defaultDob").get(function () {
@@ -91,7 +93,10 @@ userSchema.statics.isEmptySchema = async function () {
     const count = await this.countDocuments().exec();
     return count === 0;
   } catch (error) {
-    throw new Error('Error occurred while checking if User collection is empty:', error);
+    throw new Error(
+      "Error occurred while checking if User collection is empty:",
+      error
+    );
   }
 };
 
